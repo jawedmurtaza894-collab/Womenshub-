@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+  <meta name="description" content="Women's Hub — A luxury curated destination for fashion, beauty, bags & jewelry. Premium quality. Worldwide delivery. Free shipping over ₨5,000." />
+  <meta name="keywords" content="women's fashion, luxury beauty, jewelry, premium handbags, women's hub" />
+  <meta name="theme-color" content="#fdfaf6" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Women's Hub — Luxury Curated for Her" />
+  <meta property="og:description" content="A premium luxury boutique online. Fashion, beauty, jewelry & more." />
+  <meta property="og:type" content="website" />
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "OnlineStore",
+    "name": "Women's Hub",
+    "url": "https://womenshub.com",
+    "description": "Luxury curated for the modern woman.",
+    "logo": "https://womenshub.com/logo.png"
+  }
+  </script>
+  <title>Women's Hub — Luxury Curated for Her</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="header-slot"></div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-text fade-in">
+          <span class="eyebrow">✦ Curated · Crafted · Cherished</span>
+          <h1>Luxury, <em>her way.</em><br>Modern essentials for the modern woman.</h1>
+          <p>From hand-finished gold jewelry to limited-run beauty edits — every piece in our hub is selected for one woman: <strong>you</strong>.</p>
+          <div class="hero-cta">
+            <a href="pages/shop.html" class="btn btn-primary">Shop The Collection</a>
+            <a href="pages/shop.html?tag=new" class="btn btn-outline">New Arrivals →</a>
+          </div>
+          <div class="hero-stats">
+            <div><strong>50K+</strong><span>Happy Customers</span></div>
+            <div><strong>4.9★</strong><span>Average Rating</span></div>
+            <div><strong>200+</strong><span>Premium Brands</span></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-img hi-1">
+            <img src="https://sspark.genspark.ai/cfimages?u1=aahS9WR%2FodvrFh%2FZjenHtLXyA1ntwZYkjDR0dHp1I0iCjj8ZGIL0MgVRxTNCVIRoNnBEIgN2Tdag0IJiY7W0Ao7zfW4wi7vu96TD87us8IGvvIWXHNXQnlIdfmhylKpv&u2=3nX63Uerx0so2S3F&width=2560" alt="Luxury Fashion Hero">
+          </div>
+          <div class="hero-img hi-2">
+            <img src="https://sspark.genspark.ai/cfimages?u1=lDhPqxnUSWv%2FhuvamQ8KocbFjLNDTFW8GgOJND%2Bqpp1qRcsnHWIwbUA%2F8Ktqt1wJ71N1Celbpd13jSVGxP8tsRaDAA%3D%3D&u2=tnuBrt3xlnY2v1Zy&width=2560" alt="Beauty Hero">
+          </div>
+          <div class="hero-badge b1"><span class="star">★</span><div><strong>4.9 Rating</strong><br><small>50,000+ reviews</small></div></div>
+          <div class="hero-badge b2"><span>🚚</span><div><strong>Free Shipping</strong><br><small>Over ₨ 5,000</small></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FLASH SALE ============ -->
+  <section class="flash-sale">
+    <div class="container">
+      <h3>⚡ Flash Sale — Up to 40% Off</h3>
+      <div class="flash-timer" id="flashTimer">
+        <div class="unit"><strong id="ft-d">00</strong><small>Days</small></div>
+        <div class="unit"><strong id="ft-h">00</strong><small>Hours</small></div>
+        <div class="unit"><strong id="ft-m">00</strong><small>Mins</small></div>
+        <div class="unit"><strong id="ft-s">00</strong><small>Secs</small></div>
+      </div>
+      <a href="pages/shop.html?tag=trending" class="btn btn-gold">Shop Sale →</a>
+    </div>
+  </section>
+
+  <!-- ============ CATEGORIES ============ -->
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Discover</span>
+        <h2>Shop By <em>Category</em></h2>
+        <p>From boardroom to beach — find the piece that completes the moment.</p>
+      </div>
+      <div class="category-grid" id="categoryGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ BEST SELLERS ============ -->
+  <section style="background:var(--bg-soft);">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Loved by thousands</span>
+        <h2>Our <em>Bestsellers</em></h2>
+        <p>Hand-picked customer favorites — the pieces women buy again and again.</p>
+      </div>
+      <div class="product-grid" id="bestsellerGrid"></div>
+      <div class="text-center mt-4"><a href="pages/shop.html" class="btn btn-outline">View All Products</a></div>
+    </div>
+  </section>
+
+  <!-- ============ PROMO BANNERS ============ -->
+  <section>
+    <div class="container">
+      <div class="promo-grid">
+        <div class="promo-card" style="background-image: url('https://sspark.genspark.ai/cfimages?u1=WsXV%2FxqLfbHagEnqGgIecskBferAZrraOqN1hDNmjSAQGNp5As3zo%2BhttWvGKo3tISXNE6OH0VeR81eeuxU150LNo9whOy21JUv1eJsGiKSPXpBhP3Qk3DTxwfQqnK4gZbCA%2BN4uNK9zLafd9TNpVu9PRwGsfr9Eqs0UIsPG%2F%2BiofhdYxMRuW7HZ%2BNaA8%2FpiiPtJjQ%3D%3D&u2=K%2BtH%2Fi0%2FKxeykvy7&width=2560');">
+          <div class="pm-content">
+            <span style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.9;">Summer Edit</span>
+            <h3>The Desert Collection</h3>
+            <p>Soft neutrals, premium textures. Made for golden-hour days.</p>
+            <a href="pages/shop.html?cat=Fashion">Discover →</a>
+          </div>
+        </div>
+        <div class="promo-card" style="background-image: url('https://sspark.genspark.ai/cfimages?u1=sJnpvVL6HGoDEq9j%2BlbsaKOcD8A9WlFTxLuJu77O8dsBwO2%2FAisWv7iaMhhq0JYwoGZhC3JcPhKkFj4VfQam4hZdAYhG%2BloKHJ4bEftcdZSELzVmgQSBdY%2FGSDgs57WjImAgI47LSx1hfj4sdl9VjUvxGnJ%2FsA%3D%3D&u2=AGHN%2BkY9c7GeQenV&width=2560');">
+          <div class="pm-content">
+            <span style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.9;">Beauty</span>
+            <h3>Rose Gold Ritual</h3>
+            <p>Self-care, elevated.</p>
+            <a href="pages/shop.html?cat=Beauty">Shop Now →</a>
+          </div>
+        </div>
+        <div class="promo-card" style="background-image: url('https://sspark.genspark.ai/cfimages?u1=DSy3x9i89UM6alHCDu59tJYx%2FMnN%2FTb%2Fx06b2qn1DweGBPWXBukh7vR1KRkee2Eu2tQEjp%2F8jFxrOcA74Vwa4mwUeyqsjCtyZhj7LeYip9%2Fq5yAiE7heEtqLGxV0hUJLIxvgj%2FjhSlSFpHFCodoGln%2Bwu9sVoughow%2FuR5%2Bli0kt2rx9BxQLUscwG2k%2BM3s%2B0VP8fQ%3D%3D&u2=SZVg34jqovo8hZYY&width=2560');">
+          <div class="pm-content">
+            <span style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.9;">Jewelry</span>
+            <h3>Heirloom Gold</h3>
+            <p>Pieces that pass down.</p>
+            <a href="pages/shop.html?cat=Jewelry">Explore →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRENDING ============ -->
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Hot right now</span>
+        <h2>Trending <em>This Week</em></h2>
+        <p>The pieces everyone's adding to their bag.</p>
+      </div>
+      <div class="product-grid" id="trendingGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Real customers</span>
+        <h2>The <em>Women's Hub</em> Family</h2>
+      </div>
+      <div class="testimonial-grid" id="testimonialGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ NEWSLETTER ============ -->
+  <section class="newsletter">
+    <div class="container">
+      <span class="eyebrow" style="color:var(--gold);">Join the inner circle</span>
+      <h2>Get <em style="font-style:italic;">10% off</em> your first order</h2>
+      <p>Be first to hear about new drops, members-only sales & secret edits.</p>
+      <form onsubmit="event.preventDefault(); WH.toast('Subscribed', 'Welcome to the inner circle ✦','success'); this.reset();">
+        <input type="email" placeholder="your@email.com" required>
+        <button type="submit" class="btn btn-gold">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <div id="footer-slot"></div>
+  <div id="drawer-slot"></div>
+
+  <script src="data/products.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/components.js"></script>
+  <script>
+    // -------- Render homepage data --------
+    document.addEventListener("DOMContentLoaded", () => {
+      // Categories
+      const catGrid = document.getElementById("categoryGrid");
+      catGrid.innerHTML = WH_CATEGORIES.map(c => `
+        <a href="pages/shop.html?cat=${c.name}" class="cat-card">
+          <img src="${c.image}" alt="${c.name}" loading="lazy">
+          <div class="cat-arrow">→</div>
+          <div class="cat-meta">
+            <h3>${c.name}</h3>
+            <div class="cat-count">${c.count} pieces</div>
+          </div>
+        </a>`).join("");
+
+      // Bestsellers
+      const bestsellers = WH.state.products.filter(p => p.tags.includes("bestseller")).slice(0,4);
+      document.getElementById("bestsellerGrid").innerHTML = bestsellers.map(productCardHTML).join("");
+
+      // Trending
+      const trending = WH.state.products.filter(p => p.tags.includes("trending")).slice(0,4);
+      document.getElementById("trendingGrid").innerHTML = trending.map(productCardHTML).join("");
+
+      // Testimonials
+      document.getElementById("testimonialGrid").innerHTML = WH_TESTIMONIALS.map(t => `
+        <div class="t-card">
+          <div class="t-stars">${"★".repeat(t.rating)}${"☆".repeat(5-t.rating)}</div>
+          <p>"${t.text}"</p>
+          <div class="t-author">
+            <div class="t-avatar">${t.avatar}</div>
+            <div><strong>${t.name}</strong><small>${t.city}</small></div>
+          </div>
+        </div>`).join("");
+
+      // Flash timer (24h cycle)
+      const end = new Date(); end.setHours(end.getHours() + 23, 59, 59);
+      function tick() {
+        const diff = Math.max(0, end - Date.now());
+        const d = Math.floor(diff / 86400000);
+        const h = Math.floor(diff / 3600000) % 24;
+        const m = Math.floor(diff / 60000) % 60;
+        const s = Math.floor(diff / 1000) % 60;
+        const pad = n => String(n).padStart(2,"0");
+        const set = (id,v) => { const el = document.getElementById(id); if (el) el.textContent = pad(v); };
+        set("ft-d",d); set("ft-h",h); set("ft-m",m); set("ft-s",s);
+      }
+      tick(); setInterval(tick, 1000);
+    });
+  </script>
+</body>
+</html>
